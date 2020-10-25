@@ -3,8 +3,6 @@ include "db.php";
 
 include "header.php";
 
-include 'ChromePhp.php';
-
                          
 ?>
 
