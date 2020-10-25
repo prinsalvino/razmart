@@ -3,6 +3,7 @@ include "db.php";
 
 include "header.php";
 
+include 'ChromePhp.php';
 
                          
 ?>
@@ -154,7 +155,7 @@ span.price {
 						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
 
 						<label for="transaction">Upload Bukti Pembayaran : </label>
-						<input type="file" name="file" id="file">
+						<input type="file" name="fileToUpload" id="fileToUpload">
 						<br>
 
 						<div class="row">
@@ -194,7 +195,7 @@ span.price {
 				<input type="hidden" name="total_count" value="'.$total_count.'">
 					<input type="hidden" name="total_price" value="'.$total.'">
 					
-					<input type="submit" id="submit" value="Continue to checkout" class="checkout-btn">
+					<input type="submit" id="submit" name="submit" value="Continue to checkout" class="checkout-btn">
 				</form>
 				</div>
 			</div>
